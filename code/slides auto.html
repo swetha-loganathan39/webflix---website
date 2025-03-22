@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <style>
+    body {
+      background-image: url('drama collage 1.jpg');
+      /*backdrop-filter: blur(10px);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 200px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      height: 500px;
+      background: #000;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+}
+img{
+      transition: transform .2s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a style="text-decoration:none" href="professional single.html">
+          <img src="professional single 1.jpg" title="PROFESSIONAL SINGLE">
+        </a>
+      </div>
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="girlfriend.jpg"  title="MY GIRLFRIEND IS AN ALIEN 1">
+</a>
+      </div>
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="put your head.jpg"  title="PUT YOU HEAD ON MY SHOULDER">
+</a>
+      </div>
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="falling.jpg"  title="FALLING INTO YOUR SMILE">
+</a>
+      </div>
+
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="go ahead.jpg"  title="GO AHEAD">
+</a>
+      </div>
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="girlfriend 2.jpg" title="MY GIRLFRIEND IS AN ALIEN 2" >
+</a>
+      </div>
+
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="first romance.jpg"  title="FIRST ROMANCE">
+</a>
+      </div>
+      <div class="swiper-slide">
+<a style="text-decoration:none" href="professional single.html">
+        <img src="best.jpg"  title="THE BEST OF YOU IN MY MIND">
+</a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 45,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 800,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiperContainer = document.querySelector(".swiper");
+    swiperContainer.addEventListener("mouseenter", function () {
+      swiper.autoplay.stop();
+    });
+    swiperContainer.addEventListener("mouseleave", function () {
+      swiper.autoplay.start();
+    });
+  </script>
+</body>
+</html>
